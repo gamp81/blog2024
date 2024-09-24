@@ -1,10 +1,10 @@
 @extends('layouts.backend')
 
-@section('title', '文章分分类添加')
+@section('title', 'Add articles by category')
 
 @section('header')
     <h1>
-        文章分分类添加
+    Add articles by category
     </h1>
 @endsection
 
@@ -16,19 +16,19 @@
                 <form role="form" method="post" action="{{ url('backend/category') }}" id="category-form">
                     <div class="box-body">
                         <div class="form-group">
-                            <label for="name">分类名称</label>
+                            <label for="name">Name</label>
                             <div class="row">
                                 <div class='col-md-6'>
-                                    <input type='text' class='form-control' name="name" id='name' placeholder='请输入分类名称'>
+                                    <input type='text' class='form-control' name="name" id='name' placeholder='Please enter a category name'>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="cate_id">上级分类</label>
+                            <label for="cate_id">Parent Category</label>
                             <div class="row">
                                 <div class='col-md-6'>
                                     @inject('category', 'App\Presenters\CategoryPresenter')
-                                    {!! $category->getSelect(0, '顶级分类') !!}
+                                    {!! $category->getSelect(0, 'Top Classification') !!}
                                 </div>
                             </div>
                         </div>
@@ -38,8 +38,8 @@
 
 
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary">确定</button>
-                        <button type="button" class="btn btn-warning" id="reset-btn">重置</button>
+                        <button type="submit" class="btn btn-primary">Aceptar</button>
+                        <button type="button" class="btn btn-warning" id="reset-btn">Reset</button>
                     </div>
                 </form>
             </div>

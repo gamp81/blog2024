@@ -4,7 +4,7 @@
 
 @section('header')
     <h1>
-        用户列表
+    User List
     </h1>
 @endsection
 
@@ -18,7 +18,7 @@
                     <div class="pull-right">
                         <div class="btn-group">
                             <a href="{{ route('backend.user.create') }}" class="btn btn-white tooltips"
-                               data-toggle="tooltip" data-original-title="新增"><i
+                               data-toggle="tooltip" data-original-title="Add"><i
                                         class="glyphicon glyphicon-plus"></i></a>
                         </div>
                     </div><!-- pull-right -->
@@ -26,11 +26,11 @@
                 <div class="box-body table-responsive no-padding ">
                     <table class="table table-hover">
                         <tr>
-                            <th>序号</th>
-                            <th>头像</th>
-                            <th>名字</th>
-                            <th>邮箱</th>
-                            <th>操作</th>
+                        <th>Id</th>
+                        <th>Avatar</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Operation</th>
                         </tr>
                         @if ($users)
                             <?php $line = 1  ?>
@@ -38,15 +38,15 @@
                                 <tr>
                                     <td>{{ $line }}</td>
                                     <td>
-                                        <img src="{{  $u['user_pic'] }}" class="img-circle" style="width:30px;height:auto;">
+                                        <img src="{{Storage::url($u['user_pic'])}}" class="img-circle" style="width:30px;height:auto;">
                                     </td>
                                     <td>{{ $u['name'] }}</td>
                                     <td>{{ $u['email'] }}</td>
                                     <td>
                                         <a href='{{ route("backend.user.edit", ["id" => $u['id']]) }}' class='btn btn-info btn-xs'>
-                                            <i class="fa fa-pencil"></i> 修改</a>
+                                            <i class="fa fa-pencil"></i> Edit</a>
                                         <a data-href='{{ route("backend.user.destroy", ["id" => $u['id']]) }}'
-                                           class='btn btn-danger btn-xs user-delete'><i class="fa fa-trash-o"></i> 删除</a>
+                                           class='btn btn-danger btn-xs user-delete'><i class="fa fa-trash-o"></i> Delete</a>
                                     </td>
                                 </tr>
                                 <?php $line++ ?>

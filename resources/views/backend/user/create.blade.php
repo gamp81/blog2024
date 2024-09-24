@@ -1,10 +1,10 @@
 @extends('layouts.backend')
 
-@section('title', '博客用户添加')
+@section('title', 'Add blog user')
 
 @section('header')
     <h1>
-        博客用户添加
+    Add blog user
     </h1>
 @endsection
 
@@ -16,7 +16,7 @@
                 <form role="form" method="post" enctype="multipart/form-data" action="{{ url('backend/user') }}" id="user-form" >
                     <div class="box-body">
                         <div class="form-group">
-                            <label for="user_pic">头像</label>
+                            <label for="user_pic">Avatar</label>
                             <div class="row">
                                 <div class='col-md-6'>
                                     <input type="file" name="user_pic" id="user_pic" accept="image/png,image/gif,image/jpeg">
@@ -24,26 +24,26 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="name">名字</label>
+                            <label for="name">Name</label>
                             <div class="row">
                                 <div class='col-md-6'>
-                                    <input type='text' class='form-control' name="name" id='name' placeholder='请输入名字'>
+                                    <input type='text' class='form-control' name="name" id='name' placeholder='Please enter your name'>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="email">登录邮箱</label>
+                            <label for="email">Email</label>
                             <div class="row">
                                 <div class='col-md-6'>
-                                    <input type="text" class='form-control' name="email" id="email" placeholder="请输入唯一的邮箱">
+                                    <input type="text" class='form-control' name="email" id="email" placeholder="Please enter your email">
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="password">登录密码</label>
+                            <label for="password">Password</label>
                             <div class="row">
                                 <div class='col-md-6'>
-                                    <input type="password" class='form-control' name="password" id="password" placeholder="请输入大于等于8位的密码">
+                                    <input type="password" class='form-control' name="password" id="password" placeholder="Please enter your password">
                                 </div>
                             </div>
                         </div>
@@ -54,8 +54,8 @@
 
 
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary">确定</button>
-                        <button type="button" class="btn btn-warning" id="reset-btn">重置</button>
+                        <button type="submit" class="btn btn-primary">Aceptar</button>
+                        <button type="button" class="btn btn-warning" id="reset-btn">Reset</button>
                     </div>
                 </form>
             </div>

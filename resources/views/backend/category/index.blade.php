@@ -1,10 +1,10 @@
 @extends('layouts.backend')
 
-@section('title', '文章分类')
+@section('title', 'Categoria')
 
 @section('header')
     <h1>
-        文章分类
+        Categoria
     </h1>
 @endsection
 
@@ -18,7 +18,7 @@
                     <div class="pull-right">
                         <div class="btn-group">
                             <a href="{{ route('backend.category.create') }}" class="btn btn-white tooltips"
-                               data-toggle="tooltip" data-original-title="新增"><i
+                               data-toggle="tooltip" data-original-title="Added"><i
                                         class="glyphicon glyphicon-plus"></i></a>
                         </div>
                     </div><!-- pull-right -->
@@ -26,9 +26,9 @@
                 <div class="box-body table-responsive no-padding ">
                     <table class="table table-hover">
                         <tr>
-                            <th>序号</th>
-                            <th>分类名</th>
-                            <th>操作</th>
+                        <th>Id</th>
+                        <th>Category name</th>
+                        <th>Operation</th>
                         </tr>
                         @if ($category)
                             <?php $line = 1  ?>
@@ -38,12 +38,12 @@
                                     <td>{!! $cate_name  !!} </td>
                                     <td>
                                         <a href='{{ route("backend.category.edit", ["id" => $id]) }}' class='btn btn-info btn-xs'>
-                                            <i class="fa fa-pencil"></i> 修改</a>
+                                            <i class="fa fa-pencil"></i> Edit</a>
                                         <a href='{{ route("backend.category.set-nav", ["id" => $id]) }}' class='btn btn-info btn-xs'>
-                                            设为导航
+                                        Set as navigation
                                         </a>
                                         <a data-href='{{ route("backend.category.destroy", ["id" => $id]) }}'
-                                           class='btn btn-danger btn-xs category-delete'><i class="fa fa-trash-o"></i> 删除</a>
+                                           class='btn btn-danger btn-xs category-delete'><i class="fa fa-trash-o"></i> Delete</a>
                                     </td>
                                 </tr>
                                 <?php $line++ ?>
