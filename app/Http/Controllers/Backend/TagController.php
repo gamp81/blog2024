@@ -41,7 +41,7 @@ class TagController extends Controller
     {
         Tag::create(['tag_name' => $request->name]);
 
-        return redirect()->route('backend.tag.index')->with('success', '标签添加成功');
+        return redirect()->route('backend.tag.index')->with('success', 'Etiqueta agregada exitosamente');
     }
 
     /**
@@ -82,7 +82,7 @@ class TagController extends Controller
         $tag->tag_name = $request->name;
         $tag->save();
 
-        return redirect()->route('backend.tag.index')->with('success', '标签修改成功');
+        return redirect()->route('backend.tag.index')->with('success', 'Etiqueta modificada exitosamente');
     }
 
     /**

@@ -20,7 +20,7 @@ class TagPresenter
     }
 
     /**
-     * 获取标签列表
+     * 获取Etiquetas列表
      *
      * @return mixed
      */

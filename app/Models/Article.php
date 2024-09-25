@@ -14,7 +14,7 @@ class Article extends Model
     protected $guarded = ['id'];
 
     /**
-     * 文章标签
+     * 文章Etiquetas
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */

@@ -1,7 +1,7 @@
 {
-    "name": "moell/moell-blog",
-    "description": "The Moell Blog.",
-    "keywords": ["blog", "laravel", "markdown blog", "php blog", "moell blog"],
+    "name": "gmitiweb/blog",
+    "description": "The Blog.",
+    "keywords": ["blog", "laravel", "markdown blog", "php blog", "blog"],
     "license": "MIT",
     "type": "project",
     "require": {

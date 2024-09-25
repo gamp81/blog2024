@@ -32,8 +32,8 @@ class UpdateRequest extends Request
     public function messages()
     {
         return [
-            'name.required' => '请填写分类名称',
-            'name.unique'   => '标签名必须唯一'
+            'name.required' => 'Por favor complete el nombre de la categoría',
+            'name.unique'   => 'El nombre de la etiqueta debe ser único'
         ];
     }
 }

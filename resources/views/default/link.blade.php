@@ -1,6 +1,6 @@
 <div class="panel panel-default">
     <!-- Default panel contents -->
-    <div class="panel-heading">友情链接</div>
+    <div class="panel-heading">Enlaces amigables</div>
 
     @inject('linkPresenter', 'App\Presenters\LinkPresenter')
 

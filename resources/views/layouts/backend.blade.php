@@ -35,7 +35,7 @@
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b>M</b>B</span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg"><b>Moell</b>&nbsp;Blog</span>
+            <span class="logo-lg"><b>Gmiti</b>&nbsp;Blog</span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
@@ -58,7 +58,7 @@
                                 <img src="{{ Auth::user()->user_pic }}" class="img-circle" alt="User Image">
 
                                 <p>
-                                    Moell Blog - 做努力的自己
+                                    Gmiti Blog 
                                     {{--<small></small>--}}
                                 </p>
                             </li>
@@ -114,7 +114,7 @@
         <div class="pull-right hidden-xs">
 
         </div>
-        <strong>Powered by <a href="http://moell.cn" target="_blank">Moell Blog</a></strong>
+        <strong>Powered by <a href="https://github.com/gamp81/blog2024" target="_blank">Gmiti Blog</a></strong>
     </footer>
 </div>
 <!-- ./wrapper -->

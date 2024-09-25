@@ -1,21 +1,20 @@
 ## Moell Blog
 
-Moell Blog 是一个基于Laravel5.7 开发并支持markdown语法的博客。
+Moell Blog is a blog developed based on Laravel5.7 and supports markdown syntax.
 
 ### 功能
-*  支持Markdown, 文章实时预览效果
-*  图片拖拽上传
-*  支持七牛云存储
-*  支持多种编程语言代码高亮
-*  文章搜索
-*  文章分类
-*  文章标签
-*  自定义导航，分类设置为导航
-*  友情链接
-*  自定义页面
-*  RSS
-*  评论插件 disqus
-
+* Support Markdown, real-time article preview effect
+* Drag and drop image upload
+* Support Qiniu cloud storage
+* Support multiple programming language code highlighting
+* Article search
+* Article classification
+* Article tags
+* Custom navigation, set classification as navigation
+* Friendly links
+* Custom page
+* RSS
+* Comment plugin 
 ### 截图
 
 ![首页](http://moell.cn/uploads/blog/new-index.png "首页")

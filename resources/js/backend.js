@@ -195,7 +195,7 @@ $(function() {
       name: {
         validators: {
           notEmpty: {
-            message: "请输入文章标签名"
+            message: "Por favor ingrese el nombre de la etiqueta del artículo."
           }
         }
       }

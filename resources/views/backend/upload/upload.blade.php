@@ -1,10 +1,10 @@
 @extends('layouts.backend')
 
-@section('title', '文件资源上传')
+@section('title', 'Carga de recursos de archivos')
 
 @section('header')
     <h1>
-        文件资源上传
+    Carga de recursos de archivos
     </h1>
 @endsection
 
@@ -17,7 +17,7 @@
                 <form role="form" method="post" enctype="multipart/form-data" action="{{ route('backend.upload.file-store') }}">
                     <div class="box-body">
                         <div class="form-group">
-                            <label for="file">保存路径</label>
+                            <label for="file">Guardar ruta</label>
                             <div class="row">
                                 <div class='col-md-6'>
                                     {{ $dir }}
@@ -26,7 +26,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="file">文件</label>
+                            <label for="file">Documento</label>
                             <div class="row">
                                 <div class='col-md-6'>
                                     <input type="file" name="file" id="file" >
@@ -34,7 +34,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="name">文件名称</label>
+                            <label for="name">Nombre del archivo</label>
                             <div class="row">
                                 <div class='col-md-6'>
                                     <input type='text' class='form-control' name="name" id='name' placeholder='请输入文件名称'>
@@ -48,8 +48,8 @@
 
 
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary">确定</button>
-                        <button type="button" class="btn btn-warning" id="reset-btn">重置</button>
+                        <button type="submit" class="btn btn-primary">Aceptar</button>
+                        <button type="button" class="btn btn-warning" id="reset-btn">Reset</button>
                     </div>
                 </form>
             </div>

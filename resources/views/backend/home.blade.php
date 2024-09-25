@@ -1,11 +1,11 @@
 @extends('layouts.backend')
 
-@section('title', 'Moell Blog')
+@section('title', 'Gmiti Blog')
 
 @section('header')
     <h1>
         Home
-        <small>Moell Blog</small>
+        <small>Gmiti Blog</small>
     </h1>
 @endsection
 

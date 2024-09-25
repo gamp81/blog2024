@@ -1,6 +1,6 @@
 <div class="panel panel-default">
     <!-- Default panel contents -->
-    <div class="panel-heading">热门文章</div>
+    <div class="panel-heading">Artículos populares</div>
 
     @inject('hotArticle', 'App\Presenters\ArticlePresenter')
 

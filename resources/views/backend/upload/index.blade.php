@@ -17,19 +17,19 @@
                 <!-- /.box-header -->
                 <div class="box-header">
                     <p>
-                        <a href="{{ url('backend/file-upload') }}?dir={{ $dir }}" class="btn btn-info btn-sm">上传文件</a>
-                        <buttom type="button" class="btn btn-info btn-sm" onclick="mkdir()">新建目录</buttom>
+                        <a href="{{ url('backend/file-upload') }}?dir={{ $dir }}" class="btn btn-info btn-sm">Subir archivos</a>
+                        <buttom type="button" class="btn btn-info btn-sm" onclick="mkdir()">Crear nuevo directorio</buttom>
                     </p>
                 </div>
                 <div class="box-body table-responsive no-padding ">
                     <table class="table table-hover">
                         <tr>
-                            <th>名字</th>
-                            <th>类型</th>
-                            <th>日期</th>
-                            <th>大小</th>
-                            <th>链接地址</th>
-                            <th>操作</th>
+                            <th>Nombre</th>
+                            <th>Tipo</th>
+                            <th>Fecha</th>
+                            <th>Tamaño</th>
+                            <th>Dirección del enlace</th>
+                            <th>Operación</th>
                         </tr>
                         @if ($fileList)
                             @if ($fileList['dirList'])
@@ -47,7 +47,7 @@
                                         <td></td>
                                         <td>
                                             <a data-href='{{ route('backend.upload.dir-del') }}?dir={{ $dirPath }}'
-                                               class='btn btn-danger btn-xs upload-delete'><i class="fa fa-trash-o"></i> 删除</a>
+                                               class='btn btn-danger btn-xs upload-delete'><i class="fa fa-trash-o"></i> Delete</a>
                                         </td>
                                     </tr>
                                 @endforeach

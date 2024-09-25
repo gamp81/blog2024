@@ -17,7 +17,7 @@
                 <form role="form" method="post" action="{{ route('backend.article.update', ['id' => $article->id]) }}" id="article-form">
                     <div class="box-body">
                         <div class="form-group">
-                            <label for="title">标题</label>
+                            <label for="title">Title</label>
                             <div class="row">
                                 <div class='col-md-6'>
                                     <input type='text' value="{{ $article->title }}" class='form-control' name="title" id='title' placeholder='标题'>
@@ -25,7 +25,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="keyword">关键字(Keywords)</label>
+                            <label for="keyword">Keywords</label>
                             <div class="row">
                                 <div class='col-md-6'>
                                     <input type='text' value = "{{ $article->keyword }}" class='form-control' name="keyword" id='keyword' placeholder='请输入关键字，以英文逗号分割，利于搜索引擎收录'>
@@ -33,7 +33,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="desc">描述(Description)</label>
+                            <label for="desc">Description</label>
                             <div class="row">
                                 <div class='col-md-10'>
                                     <input type='text' value="{{ $article->desc }}" class='form-control' name="desc" id='desc' placeholder='请输入文章描述'>
@@ -41,13 +41,13 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="content">文章内容</label>
+                            <label for="content">Content</label>
                             <div class="row markdown-editor">
                                 <textarea  id="markdown-editor" name="markdown_content">{!! $article->content !!}</textarea>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="cate_id">文章分类</label>
+                            <label for="cate_id">Category</label>
                             <div class="row">
                                 <div class='col-md-6'>
                                     @inject('category', 'App\Presenters\CategoryPresenter')
@@ -56,7 +56,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="tags">标签</label>
+                            <label for="tags">Tags</label>
                             <div class="row">
                                 <div class='col-md-6'>
                                     @inject('tag', 'App\Presenters\TagPresenter')
@@ -71,8 +71,8 @@
 
 
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary">修改</button>
-                        <button type="button" id="reset-btn" class="btn btn-warning">重置</button>
+                        <button type="submit" class="btn btn-primary">Aceptar</button>
+                        <button type="button" id="reset-btn" class="btn btn-warning">Reset</button>
                     </div>
                 </form>
 
