@@ -1,10 +1,10 @@
 @extends('layouts.backend')
 
-@section('title', '导航添加')
+@section('title', 'Navegación agregada')
 
 @section('header')
     <h1>
-        导航添加
+    Navegación agregada
     </h1>
 @endsection
 
@@ -16,10 +16,10 @@
                 <form role="form" method="post" action="{{ url('backend/navigation') }}" id="navigation-form">
                     <div class="box-body">
                         <div class="form-group">
-                            <label for="name">分类名称</label>
+                            <label for="name">Nombre de categoría</label>
                             <div class="row">
                                 <div class='col-md-6'>
-                                    <input type='text' class='form-control' name="name" id='name' placeholder='请输入分类名称'>
+                                    <input type='text' class='form-control' name="name" id='name' placeholder='Por favor ingrese el nombre de la categoría'>
                                 </div>
                             </div>
                         </div>
@@ -27,25 +27,25 @@
                             <label for="url">URL</label>
                             <div class="row">
                                 <div class='col-md-6'>
-                                    <input type='text' class='form-control' name="url" id='url' placeholder='请输入合法链接地址'>
+                                    <input type='text' class='form-control' name="url" id='url' placeholder='Por favor ingresa una dirección de enlace legal'>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="sequence">显示顺序</label>
+                            <label for="sequence">Orden de visualización</label>
                             <div class="row">
                                 <div class='col-md-6'>
-                                    <input type='text' value="0" class='form-control' name="sequence" id='sequence' placeholder='请输入整形的数值'>
+                                    <input type='text' value="0" class='form-control' name="sequence" id='sequence' placeholder='Por favor ingrese el valor entero'>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="state">状态</label>
+                            <label for="state">Estado</label>
                             <div class="row">
                                 <div class='col-md-6'>
                                     <select name="state" id="state" class="form-control">
-                                        <option value="0">显示</option>
-                                        <option value="1">隐藏</option>
+                                        <option value="0">Mostrar</option>
+                                        <option value="1">Esconder</option>
                                     </select>
                                 </div>
                             </div>
@@ -56,8 +56,8 @@
 
 
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary">确定</button>
-                        <button type="button" class="btn btn-warning" id="reset-btn">重置</button>
+                        <button type="submit" class="btn btn-primary">Aceptar</button>
+                        <button type="button" class="btn btn-warning" id="reset-btn">reset</button>
                     </div>
                 </form>
             </div>

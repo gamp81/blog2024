@@ -1,10 +1,10 @@
 @extends('layouts.backend')
 
-@section('title', '导航管理')
+@section('title', 'Gestión de navegación')
 
 @section('header')
     <h1>
-        导航管理
+    Gestión de navegación
     </h1>
 @endsection
 
@@ -27,14 +27,14 @@
                 <div class="box-body table-responsive no-padding ">
                     <table class="table table-hover">
                         <tr>
-                            <th>序号</th>
-                            <th>导航名</th>
-                            <th>URL</th>
-                            <th>类型</th>
-                            <th>顺序</th>
-                            <th>状态</th>
-                            <th>文章分类</th>
-                            <th>操作</th>
+                        <th>Id</th>
+                        <th>Nombre de navegación</th>
+                        <th>URL</th>
+                        <th>Tipo</th>
+                        <th>Pedido</th>
+                        <th>Estado</th>
+                        <th>Categoría de artículo</th>
+                        <th>Operación</th>
                         </tr>
                         @if ($navigations)
                             @inject('articleCategory', 'App\Presenters\CategoryPresenter')
